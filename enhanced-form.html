@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      margin: 10px 0 20px;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+    th, td {
+      border: 1px solid #888;
+      padding: 8px;
+      text-align: left;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Registration Portal</h1>
+    <p>Please complete the form below.</p>
+  </header>
+
+  <form action="#" method="post">
+    <label>Full Name:
+      <input type="text" name="fullname" placeholder="Your full name" required autocomplete="name"/>
+    </label>
+
+    <label>Email:
+      <input type="email" name="email" placeholder="email@example.com" required autocomplete="email"/>
+    </label>
+
+    <label>Date of Birth:
+      <input type="date" name="dob" required/>
+    </label>
+
+    <label>Gender:
+      <select name="gender" required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+    </label>
+
+    <label>Password:
+      <input type="password" name="password" placeholder="Enter a strong password" required minlength="6"/>
+    </label>
+
+    <label>Read-only Student ID:
+      <input type="text" name="studentID" value="AUTO1234" readonly/>
+    </label>
+
+    <label>Bio:
+      <textarea name="bio" placeholder="Tell us about yourself" rows="4"></textarea>
+    </label>
+
+    <label>
+      <input type="checkbox" name="terms" required /> I agree to the terms and conditions
+    </label>
+
+    <input type="submit" value="Submit Form"/>
+  </form>
+
+  <section>
+    <h2>Available Courses</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>Data Science</li>
+      <li>AI & Machine Learning</li>
+      <li>Cybersecurity</li>
+    </ul>
+
+    <h2>Schedule</h2>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Day</th>
+        <th>Time</th>
+      </tr>
+      <tr>
+        <td>Web Development</td>
+        <td>Monday</td>
+        <td>10:00 AM</td>
+      </tr>
+      <tr>
+        <td>Data Science</td>
+        <td>Tuesday</td>
+        <td>2:00 PM</td>
+      </tr>
+    </table>
+
+    <h2>LAb Image</h2>
+    <img src="jonathan-borba-QoCP9hbrgvA-unsplash.jpg" alt="Campus View" width="500px"/>
+
+    <audio src="Eyob Mekonen-yegabezekuachew.mp3" controls autoplay></audio>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kaleab Tadesse</p>
+  </footer>
+
+</body>
+</html>
